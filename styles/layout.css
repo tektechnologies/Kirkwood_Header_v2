@@ -1,0 +1,67 @@
+.clearfix {
+  clear: both;
+  overflow: hidden;
+}
+
+body > header {
+  background-color: #ffeaa9;
+  position: relative;
+  padding: 10px;
+}
+
+main {
+  padding: 10px;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #004b87;
+	color: white;
+	text-align: center;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* This runs the css header to slide up until the nav is in a fixed position */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.sticky {
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky +.content {
+	padding-top: 155px;
+} 
+.top-container {
+	height: 20px;
+	background-color: #00aeef;
+	padding: 5px;
+}
+
+.top-container h1 {
+	font-size: 22px;
+	margin: -5px;
+	padding: 0px;
+	float: left;
+}
+
+.top-container p {
+	float: left;
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+
+
+.kirkWoodHeader {
+	background: #004b87;
+	color: #fff;
+
+	border-bottom: 3px #114968 solid;
+} 

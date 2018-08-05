@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+body {
+	margin: 0;
+	font-family: Arial;
+	font-family: "Roboto", sans-serif;
+}
+
+a:link {
+	color: #ffffff;
+}
+
+a:visited {
+	color: #fff;
+}
+
+a:active {
+	color: #00aeef;
+}
+
+a:focus {
+	color: #00aeef;
+}
+
+a:hover {
+	color: #00aeef;
+}
+
