@@ -4,9 +4,9 @@
 }
 
 body > header {
-  background-color: #ffeaa9;
+  background-color: #004b87;
   position: relative;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 main {
@@ -61,7 +61,7 @@ main {
 
 .kirkWoodHeader {
 	background: #004b87;
-	color: #fff;
-
-	border-bottom: 3px #114968 solid;
+	color: #fff; /*This makes the icon white*/
+  padding: 25px;  /*Makes Icon visable*/
+	border-bottom: 3px #00aeef solid;
 } 

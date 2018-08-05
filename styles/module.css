@@ -12,9 +12,10 @@ main header div address {
   font-style: italic;
 } */
 nav {
+  box-sizing: border-box;
 	background-image: url("../images/kirkwood.png");
 	background-repeat:no-repeat;
-  background-position: center; 
+  background-position: right; 
   background-color: #004b87;
 } 
 
@@ -52,7 +53,7 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid #00aeef;
 }
 
 nav ul li a {
@@ -60,10 +61,10 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.5em;
   display: block;
-  padding: 10px 0;
+  /* padding: 10px 0;     Space between the anchors */
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 790px) {
   .icon-menu {
     display: none;
   } 
