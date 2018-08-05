@@ -9,7 +9,7 @@ We built this app to display published articles that are sort by date from most 
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
-[Click to view Live Site.](https://mlhaus.github.io/02-jquery-and-the-dom/marc-craig)
+[Click to view Live Site.]( https://tektechnologies.github.io/Kirkwood_Header_v2/. )
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
