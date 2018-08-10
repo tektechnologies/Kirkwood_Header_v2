@@ -11,9 +11,19 @@ main header div address {
   font-weight: bold;
   font-style: italic;
 } */
+.heading-group-h1 img{
+  position: absolute;
+  margin-top:-35px;
+  left: 50%;
+}
+
+
+
+
 nav {
-  box-sizing: border-box;
-	background-image: url("../images/kirkwood.png");
+  /* box-sizing: border-box; */
+  /* padding: 30; */
+	/* background-image: url("../images/kirkwood.png"); */
 	background-repeat:no-repeat;
   background-position: right; 
   background-color: #004b87;
@@ -42,8 +52,9 @@ nav {
 
 nav ul {
   margin-left: -200px;
-  margin-bottom: -275px;
+  margin-bottom: -380px;
   padding: 0;
+  
 }
 
 .icon-menu + input:checked ~ ul {
@@ -52,15 +63,17 @@ nav ul {
 }
 
 nav ul li {
+  
+  background-color: #114968;
   list-style: none;
   border-bottom: 1px solid #00aeef;
 }
 
 nav ul li a {
-  color: #777777;
+  /* color: #777777; */
   text-decoration: none;
-  font-size: 1.5em;
-  display: block;
+  /* font-size: 1.5em; */
+  /* display: block; */
   /* padding: 10px 0;     Space between the anchors */
 }
 
