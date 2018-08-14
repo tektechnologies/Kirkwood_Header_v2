@@ -1,180 +1,137 @@
-/* Base Css --------------------------------------------------*/
+/* === BASE RULES === */
 body {
-	background-color: #00aeef;
-	margin: 0;
-	font-family: Arial;
-	font-family: "Roboto", sans-serif;
-	z-index: 0;
-}
-a:link {
-	color: #ffffff;
-}
-a:visited {
-	color: #fff;
-}
-a:active {
-	color: #00aeef;
-}
-a:focus {
-	color: #00aeef;
-}
-a:hover {
-	color: #00aeef;
-}
-.colorBlue {
- background-color: blue;
-}
-/*/
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/*/
-/* This CSS page is for page modual css */
-/*/
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/*/
-/*Starts the css for the drop down menu*/
-li a, .dropbtn {
-}
-li a:hover, .dropdown:hover .dropbtn {
-	background-color: #114968;
-}
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
-}
-/*This makes the link text color black in drop down link menu*/
-.dropdown-content a {
-	color: black;
-}
-/*displays the link menu back ground color of the selected link on hover darker grey than the menu background*/
-.dropdown-content a:hover {
-	background-color: #00aeef 
-}
-/*displays the link menu when you hover on link*/
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-/* Layout Css ------------------------------------------------- */
-/* Layout Css */
-/* Layout Css --------------------------------------------------004b87*/
-.clearfix {
-	clear: both;
-	overflow: hidden;
-}
-body > header {
-	background-color: #024f93;
-	position: relative;
+  font-size: 100%;
+  color: #313131;
+  margin: 0;
 }
 .footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #024f93;
-	color: white;
-	text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #024f93;
+  color: white;
+  text-align: center;
 }
-/*/
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/*/
-/* This runs the css header to slide up until the nav is in a fixed position */
-/*/
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/*/
-.kirkWoodHeader {
-	position: fixed;
-	width: 100%;
-	background-color: #024f93;
-	border-bottom: 3px #00aeef solid;
- /*left: 0;
-	top: 0;
-	text-align: center;
-	background: #004b87;
-	*/
- /* padding: 30px;
-	Makes Icon visable */
+/*Starts the css for the drop down menu*/
+li a, .dropbtn {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-/* Module Css ------------------------------------------------- */
-/* Module Css */
-/* Module Css --------------------------------------------------*/
-.icon-menu {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	font-size: 2em;
-	z-index: 1;
+.dropdown-content {
+  margin-top: -25px;
+  margin-left: 120px;
+  display: none;
+  position: absolute;
+  background-color: #024f93;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
-/* Use of checkbox came from https://codepen.io/erikterwan/pen/EVzeRP?editors=1100 */
-.icon-menu + input {
-	width: 2.5em;
-	height: 2.25em;
-	position: absolute;
-	top: 12px;
-	left: 7px;
-	cursor: pointer;
-	opacity: 0;
-	z-index: 2;
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
-.icon-menu + input:checked ~ ul {
-	margin-left: 0px;
-	margin-bottom: 0px;
+.dropdown-content a:hover {
+  background-color: #00aeef 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* === FLOATING AND CLEARFIX === */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* === OVERALL MODULE RULES === */
+body > header {
+  background: #024f93;
 }
 nav {
-	padding: 30px;
- /* background-image: url("./images/circle_logo.jpg");
-	*/
-	background-repeat:no-repeat;
-	background-position: right;
+  padding: 34px;
 }
 nav ul {
-	margin-top:30px;
- /* margin-left: -200px;
-	*/
-	margin-bottom: -350px;
-	padding: 0;
+  margin-top:40px;
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  background-color: #114968;
 }
-nav ul li {
-	background-color: #114968;
-	list-style: none;
-	border-bottom: 1px solid #00aeef;
+nav:hover ul {
+  display: block;
 }
-nav ul li a {
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 1.5em;
-	display: block;
+nav li {
+  font-size: 1.25em;
+  padding: .4em .15em;
+  border-bottom: 1px solid #00aeef;
 }
-@media only screen and (min-width: 790px) {
-	.icon-menu {
-			display: none;
+/* === LINK STYLES === */
+a:link {
+  color: #ffffff;
+}
+a:visited {
+  color: #fff;
+}
+a:active {
+  color: #00aeef;
+}
+a:focus {
+  color: #00aeef;
+}
+a:hover {
+  color: #fff;
+}
+/* === ICON FONT === */
+.icon-menu {
+  font-size: 3em;
+  float: left;
+}
+.icon-menu img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* === MEDIA QUERY === */
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+      display: none;
  }
-	.icon-menu + input {
-			display: none;
+ .heading-group-h1{
+  display: none;
  }
-	nav ul {
-			background-color: #114968;
-			margin-top: 0px;
+  nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      background-color: #024f93;
+      color: white;
+      width: 100%;
  }
-	nav ul li {
-			display: inline-block;
-			border: none;
+  nav ul {
+      margin-top:0px;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      display: block;
  }
-	nav ul li a {
-			padding: 10px 20px 10px 0px;
+  nav ul li {
+      display: inline;
+      border-bottom: none;
  }
-	.kirkWoodHeader {
-			position: fixed;
-			left: 0;
-			top: 0;
-			width: 100%;
-			background-color: #024f93;
-			border-bottom: none;
-		 /* text-align: center;
-			*/
-		 /* padding: 30px;
-			Makes Icon visable */
+  nav ul li:hover a {
+      color: white;
  }
+}
+.heading-group-h1 img{
+ position: fixed;
+ right:0;
+ top:0;   
 }
