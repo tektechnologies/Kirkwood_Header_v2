@@ -99,7 +99,7 @@ a:hover {
   left: 10px;
 }
 /* === MEDIA QUERY === */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 500px) {
   .icon-menu {
       display: none;
  }
