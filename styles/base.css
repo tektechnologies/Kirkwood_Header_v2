@@ -55,10 +55,10 @@ body > header {
 }
 
 nav {
-      
+  /* background-image: url("../images/kirkwood.png"); 
+  background-repeat:no-repeat;
+  background-position: center;  */
   position: fixed;
-  left: 0;
-  top: 0;
   background-color: #024f93;
   color: white;
   width: 100%;
@@ -67,10 +67,7 @@ nav {
 }
 
 
-nav img {
 
- float: right;
-}
 nav ul {
   margin-top:40px;
   display: none;
@@ -118,16 +115,48 @@ a:hover {
   top: 10px;
   left: 10px;
 }
+.KirkDeskImg {
+ float: right;
+ padding-top:30px;
+ 
+}
+section  {
+  box-sizing: border-box;
+  float: left;
+  padding-top:20px;
+  /* float: center;
+  text-align: center; */
+  
+}
+
+
+section  p{
+ 
+ margin-left: 25px;
+  
+}
+
+
+
+@media only screen and (max-width:599px) and (min-width: 0px) {
+  .KirkDeskImg {
+    display:  none;
+  }
+  nav img {
+    float: right;
+   }
+}
 /* === MEDIA QUERY === */
 @media only screen and (min-width: 600px) {
+  
   .icon-menu {
       display: none;
  }
- /* .heading-group-h1{
-  display: none;
- } */
+ 
   nav {
-      
+      /* background-image: url("../images/kirkwood.png");  */
+      /* background-repeat:no-repeat;
+      background-position: center;  */
       position: fixed;
       left: 0;
       top: 0;
@@ -135,6 +164,7 @@ a:hover {
       color: white;
       width: 100%;
       
+
       
  }
   nav ul {
@@ -144,6 +174,7 @@ a:hover {
       left: 0;
       top: 0;
       display: block;
+    
  }
   nav ul li {
       display: inline;
@@ -153,14 +184,9 @@ a:hover {
       color: white;
  }
 
- nav img{
+ .KirkMobileImg {
  display:none;
-  /* background-image: url("../images/kirkwood.png"); */
+  
  } 
-
+ 
 }
-/* .heading-group-h1 img{
- position: fixed;
- right:0;
- top:0;   
-} */
