@@ -53,8 +53,8 @@ li a, .dropbtn {
 body > header {
   background: #024f93;
 }
-nav {
-  padding: 34px;
+nav img {
+ float: right;
 }
 nav ul {
   margin-top:40px;
@@ -63,6 +63,8 @@ nav ul {
   list-style: none;
   clear: both;
   background-color: #114968;
+  padding-top: 6px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 nav:hover ul {
   display: block;
@@ -72,6 +74,9 @@ nav li {
   padding: .4em .15em;
   border-bottom: 1px solid #00aeef;
 }
+
+
+
 /* === LINK STYLES === */
 a:link {
   color: #ffffff;
@@ -99,20 +104,23 @@ a:hover {
   left: 10px;
 }
 /* === MEDIA QUERY === */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .icon-menu {
       display: none;
  }
- .heading-group-h1{
+ /* .heading-group-h1{
   display: none;
- }
+ } */
   nav {
+      
       position: fixed;
       left: 0;
       top: 0;
       background-color: #024f93;
       color: white;
       width: 100%;
+      
+      
  }
   nav ul {
       margin-top:0px;
@@ -129,9 +137,15 @@ a:hover {
   nav ul li:hover a {
       color: white;
  }
+
+ nav img{
+ display:none;
+  /* background-image: url("../images/kirkwood.png"); */
+ } 
+
 }
-.heading-group-h1 img{
+/* .heading-group-h1 img{
  position: fixed;
  right:0;
  top:0;   
-}
+} */
